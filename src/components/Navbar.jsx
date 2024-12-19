@@ -1,0 +1,55 @@
+import { navDropdown } from "./nav";
+import "../styles/navbar.css";
+
+function NavLink() {
+  return (
+    <ul className="navLinks">
+      {navDropdown.map((link) => {
+        return (
+          <li className="mainLinks">
+            <a href="#" className="navLink">
+              {link.mainLink}
+            </a>
+            <ul className="dropdown">
+              {link.subLinks.map((links) => {
+                return <li className="dropdownLinks">{links}</li>;
+              })}
+            </ul>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
+const Navbar = () => {
+  const logo = "https://lemonpress.mn/logo/lemonpress.svg";
+  return (
+    <div className="navbar">
+      <nav>
+        <img src={logo} alt="Lemon Press logo" />
+        <NavLink />
+      </nav>
+      <div className="navButtons">
+        <a href="#" className="searchBtn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="21"
+            height="21"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m18.031 16.617l4.283 4.282l-1.415 1.415l-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9s9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617m-2.006-.742A6.98 6.98 0 0 0 18 11c0-3.867-3.133-7-7-7s-7 3.133-7 7s3.133 7 7 7a6.98 6.98 0 0 0 4.875-1.975z"
+            />
+          </svg>
+        </a>
+        <a href="#" className="mainButton">
+          Уншаад үзье
+        </a>
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;
