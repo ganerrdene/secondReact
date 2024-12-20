@@ -1,5 +1,5 @@
-import { navDropdown } from "./nav";
-import "../styles/navbar.css";
+import { navDropdown } from "../header/nav";
+import "../header/navbar.css";
 
 function NavLink() {
   return (
