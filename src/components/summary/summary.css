@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+.summ {
+  margin-top: 90px;
+}
+.summPosters {
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+}
+.summPosters img {
+  width: 100%;
+}
+.lemonadeEp {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #f5f8fc;
+  margin: 25px 0;
+}
+.lemonade {
+  background: #fbda04;
+  display: inline-block;
+  font-size: 10px;
+  padding: 12.75px 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.episode {
+  font-weight: 700;
+  font-size: 15px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding: 10px 16px;
+}
